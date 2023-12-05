@@ -1,0 +1,21 @@
+.nav-left {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-input {
+    width: 100%;
+  }
+
+  &-lists {
+    display: flex;
+    width: 100%;
+
+    gap: 2rem;
+  }
+}
+
+.search {
+  width: 50%;
+}
