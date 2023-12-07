@@ -1,7 +1,7 @@
 .home-header {
-  width: 90%;
+  width: 70rem;
   padding: 1rem;
-  background-color: grey;
+  background-color: #424753;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: white;
@@ -21,6 +21,7 @@
   }
 
   &-link {
+    cursor: pointer;
     &:hover {
       color: red;
     }

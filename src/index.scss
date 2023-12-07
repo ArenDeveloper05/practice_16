@@ -29,6 +29,22 @@ a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: inherit;
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.blue {
+  color: #424753;
+}
+
+.lightblue {
+  color: #4db2b3;
+}
+
+.font-weight-400 {
+  font-weight: 400;
 }
