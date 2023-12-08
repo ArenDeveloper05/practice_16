@@ -1,0 +1,14 @@
+.nav-right {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-lists {
+    display: flex;
+    gap: 2rem;
+  }
+}

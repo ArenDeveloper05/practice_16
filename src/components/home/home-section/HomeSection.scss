@@ -1,0 +1,18 @@
+.home-section {
+  &-articles {
+    display: flex;
+    gap: 1rem;
+
+    > article {
+      height: 30rem;
+      border: 2px solid red;
+    }
+  }
+}
+
+.news-description {
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

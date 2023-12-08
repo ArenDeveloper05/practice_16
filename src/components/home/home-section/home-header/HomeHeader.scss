@@ -1,0 +1,28 @@
+.home-header {
+  width: 90%;
+  padding: 1rem;
+  background-color: grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  margin: auto;
+
+  &-lists {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    > li > button {
+      background-color: red;
+      border: none;
+      height: 6px;
+      width: 6px;
+    }
+  }
+
+  &-link {
+    &:hover {
+      color: red;
+    }
+  }
+}
