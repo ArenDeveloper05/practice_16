@@ -1,6 +1,6 @@
 .header {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +9,46 @@
   top: 0;
   left: 0;
 
-  background-color: red;
-
   &-nav {
+    width: max-content;
     display: flex;
+    justify-content: center;
+
+    &-lists {
+      margin-left: 100px;
+      display: flex;
+      gap: 20px;
+
+      > li {
+        display: flex;
+        cursor: pointer;
+        align-items: flex-end;
+
+        &:hover {
+          color: #c80000 !important;
+        }
+      }
+    }
   }
+}
+
+.header-logo {
+  cursor: pointer;
+  width: 100px;
+}
+
+.search {
+  position: absolute;
+  background: #ececec;
+  top: 26px;
+  left: 540px;
+  width: 254px;
+  height: 41px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+}
+
+.active-link {
+  color: #c80000 !important;
 }
