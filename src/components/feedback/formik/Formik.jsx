@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+
 import "./Formik.scss"
 
 const SignupSchema = Yup.object().shape({
