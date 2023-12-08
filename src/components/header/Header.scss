@@ -13,6 +13,7 @@
     width: max-content;
     display: flex;
     justify-content: center;
+    position: relative;
 
     &-lists {
       margin-left: 100px;
@@ -23,6 +24,7 @@
         display: flex;
         cursor: pointer;
         align-items: flex-end;
+        font-weight: 900;
 
         &:hover {
           color: #c80000 !important;
@@ -41,7 +43,7 @@
   position: absolute;
   background: #ececec;
   top: 26px;
-  left: 540px;
+  left: 0;
   width: 254px;
   height: 41px;
   padding: 10px;

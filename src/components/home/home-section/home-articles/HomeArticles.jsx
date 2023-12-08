@@ -4,6 +4,7 @@ import "./HomeArticles.scss";
 
 const HomeArticles = () => {
   const news = useSelector((state) => state.homeNews.news);
+
   return (
     <div className="home-section-articles">
       {news &&
