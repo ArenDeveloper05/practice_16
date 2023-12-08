@@ -1,18 +1,25 @@
+import "./SideList.scss"
+
 const SideList = ({ title, list, active, setActive }) => {
   return (
-    <div>
-      <h1>{title ? title : ""}</h1>
-      <div>
+    <div className="side-list">
+      <h1 className="side-list-title">
+        <span className="side-list-title-text">
+          {title ? title : ""}
+        </span>
+      </h1>
+      <div className="side-list-lists">
         {list &&
-          list.map(({ id, title, component }) => {
+          list.map(({ id, title }) => {
             return (
               <div
                 key={id}
                 onClick={() => {
                   id !== active && setActive(id);
                 }}
+                className="side-list-lists-item"
               >
-                <p>{title ? title : ""}</p>
+                <span>{title ? title : ""}</span>
               </div>
             );
           })}

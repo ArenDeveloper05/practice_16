@@ -8,15 +8,11 @@ const HomeArticles = () => {
   return (
     <div className="home-section-articles">
       {news &&
-        news.map(({ id, img, title, date, views, content }) => {
+        news.map((news) => {
           return (
-            <article key={id} className="home-news-article">
+            <article key={news.id} className="home-news-article">
               <NewsItem
-                img={img}
-                title={title}
-                date={date}
-                views={views}
-                content={content}
+                news={news}
               />
             </article>
           );

@@ -1,0 +1,9 @@
+.about {
+    &-container {
+        margin: auto;
+        max-width: 75rem;
+        display: flex;
+        gap: 2rem;
+        padding: 24px;
+    }
+}

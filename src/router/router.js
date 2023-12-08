@@ -6,6 +6,7 @@ const ROUTER = {
   PARTNERS_PAGE_ROUTE: "/partners",
   FEEDBACK_PAGE_ROUTE: "/feedback",
   NEWS_PAGE_ROUTE: "/news",
+  SINGLE_NEWS_PAGE_ROUTE: "news/:id",
   ERROR_PAGE_ROUTE: "*",
 };
 
