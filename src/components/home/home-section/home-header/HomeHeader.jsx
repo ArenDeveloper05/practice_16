@@ -7,7 +7,7 @@ const HomeHeader = () => {
     <header className="home-header">
       <ul className="home-header-lists">
         <li>
-          <Link to={ROUTER.HOME_PAGE_ROUTE} className="home-header-link">
+          <Link to={ROUTER.SERVICES_PAGE_ROUTE} className="home-header-link">
             ԱՈՒԴԻՏ ԵՎ ՀԱՎԱՍՏԻԱՑՈՒՄ
           </Link>
         </li>
@@ -15,7 +15,7 @@ const HomeHeader = () => {
           <button></button>
         </li>
         <li>
-          <Link to={ROUTER.HOME_PAGE_ROUTE} className="home-header-link">
+          <Link to={ROUTER.Accountant_PAGE_ROUTE} className="home-header-link">
             ՀԱՇՎԱՊԱՀԱԿԱՆ ՀԱՇՎԱՌՈՒՄ
           </Link>
         </li>
@@ -23,7 +23,7 @@ const HomeHeader = () => {
           <button></button>
         </li>
         <li>
-          <Link to={ROUTER.HOME_PAGE_ROUTE} className="home-header-link">
+          <Link to={ROUTER.Taxes_PAGE_ROUTE} className="home-header-link">
             ՀԱՐԿԵՐ
           </Link>
         </li>
@@ -31,7 +31,7 @@ const HomeHeader = () => {
           <button></button>
         </li>
         <li>
-          <Link to={ROUTER.HOME_PAGE_ROUTE} className="home-header-link">
+          <Link to={ROUTER.Advices_PAGE_ROUTE} className="home-header-link">
             ԽՈՐՀՐԴԱՏՎՈՒԹՅՈՒՆ
           </Link>
         </li>

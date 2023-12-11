@@ -10,9 +10,9 @@ const Partners = () => {
       <h3>Գործընկերներ</h3>
       <div className="partners">
         {partnersData &&
-          partnersData.map(({ id, img, title, text }) => {
+          partnersData.map(({ id, img, title, text },index) => {
             return (
-              <div className="partners-container" key={id}>
+              <div className="partners-container" key={id} style={{ '--index': index }}>
                 <img src={img} alt="partners-img" />
                 <h1>{title}</h1>
                 <span>{text}</span>

@@ -146,3 +146,27 @@ export const pubicationsSideBar =  [
     // component: <SideReports />,
   },
 ];
+
+export const homeConfig=[
+  {
+    id:1,
+    title:"Արտաքին աուդիտ"
+  },
+  {
+    id:2,
+    title:"ներքին աուդիտ"
+  },
+  {
+    id:3,
+    title: "Հատուկ նշանակության աուդիտ"
+  },
+  {
+    id:4,
+    title:"Աուդիտորական դիտարկում"
+  },
+  {
+    id:5,
+    title:"Կոմպիլիացիա"
+  },
+]
+
