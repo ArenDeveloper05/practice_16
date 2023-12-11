@@ -12,11 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { sliderConfig } from "../../../config";
+import { homeConfig, sliderConfig } from "../../../config";
 
 const HomeSlider = () => {
   return (
     <div className="home-slider">
+     
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
@@ -36,8 +37,21 @@ const HomeSlider = () => {
         {sliderConfig &&
           sliderConfig.map(({ id, img, link }) => {
             return (
-              <SwiperSlide className="swiper-item" key={id}>
-                <img src={img} alt="slider-img" />
+              <SwiperSlide className="swiper-item" key={id} style={{ backgroundImage: `url(${img})` }}>
+                {id && 
+                id===1 ?
+                <div className="swiper-item-container">
+                  <h1>GLOB AUDIT</h1>
+          <ul>
+                    {homeConfig &&
+          homeConfig.map(({ id, title }) => {
+            return   <li key={id}>{title}</li>
+          })}            
+          </ul>
+          <button>Մանրամասն</button>
+                </div>: <div className="first-header">
+                  <h1 >GLOB AUDIT</h1>
+                  </div> }
               </SwiperSlide>
             );
           })}

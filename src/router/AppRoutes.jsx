@@ -9,11 +9,17 @@ import ServicesPage from "../pages/ServicesPage";
 import PartnersPage from "../pages/PartnersPage";
 import FeedbackPage from "../pages/FeedbackPage";
 import NewsPage from "../pages/NewsPage";
+import AccountantPage from "../pages/AccountantPage";
+import TaxesPage from "../pages/TaxesPage";
+import  AdvicesPage  from "../pages/AdvicesPage";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path={ROUTER.HOME_PAGE_ROUTE} element={<HomePage />} />
+      <Route path={ROUTER.Accountant_PAGE_ROUTE} element={<AccountantPage />} />
+      <Route path={ROUTER.Taxes_PAGE_ROUTE} element={<TaxesPage />} />
+      <Route path={ROUTER.Advices_PAGE_ROUTE} element={<AdvicesPage />} />
       <Route path={ROUTER.ABOUT_PAGE_ROUTE} element={<AboutPage />} />
       <Route
         path={ROUTER.PUBLICATIONS_PAGE_ROUTE}

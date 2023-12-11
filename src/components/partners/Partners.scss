@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 80px;
+  color: #424753;
   > h3 {
     margin-top: 100px;
     font-size: 2rem;
@@ -17,9 +18,28 @@
   max-width: 1200px;
   &-container {
     padding: 30px;
-    width: 400px;
+    width: 380px;
     > h1 {
       margin-bottom: 10px;
     }
   }
 }
+
+.partners-container {
+  margin: 10px;
+  text-align: center;
+  opacity: 0;
+  animation: fallAnimation 0.5s ease-in-out forwards;
+  animation-delay: calc(0.3s * var(--index));
+}
+
+@keyframes fallAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
