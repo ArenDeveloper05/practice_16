@@ -9,6 +9,7 @@ import ServicesPage from "../pages/ServicesPage";
 import PartnersPage from "../pages/PartnersPage";
 import FeedbackPage from "../pages/FeedbackPage";
 import NewsPage from "../pages/NewsPage";
+import SingleNewsPage from "../pages/SingleNewsPage";
 import AccountantPage from "../pages/AccountantPage";
 import TaxesPage from "../pages/TaxesPage";
 import  AdvicesPage  from "../pages/AdvicesPage";
@@ -30,6 +31,7 @@ const AppRoutes = () => {
       <Route path={ROUTER.FEEDBACK_PAGE_ROUTE} element={<FeedbackPage />} />
       <Route path={ROUTER.NEWS_PAGE_ROUTE} element={<NewsPage />} />
       <Route path={ROUTER.ERROR_PAGE_ROUTE} element={<ErrorPage />} />
+      <Route path={ROUTER.SINGLE_NEWS_PAGE_ROUTE} element={<SingleNewsPage />} />
     </Routes>
   );
 };

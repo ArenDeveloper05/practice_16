@@ -1,6 +1,12 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const NewsItem = ({ img, title, date, views, content }) => {
+const NewsItem = ({ news }) => {
+  const { id, img, title, date, views, content } = news;
+  const navigate = useNavigate();
+  const changePath = (path) => navigate(path);
+  const handleClick = () => {
+    changePath(`/news/${id}`);
+  }
   return (
     <>
       <img src={img.src} alt={img.alt} />
@@ -13,7 +19,7 @@ const NewsItem = ({ img, title, date, views, content }) => {
         </h4>
       </div>
       <h3 className="font-weight-400">{content}</h3>
-      <button className="home-news-article-button">
+      <button className="home-news-article-button" onClick={handleClick}>
         <h2 className="font-weight-400">Մանրամասն</h2>
       </button>
     </>

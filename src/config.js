@@ -1,6 +1,8 @@
 import ROUTER from "./router/router";
 import sliderImage1 from "./assets/images/slider/slider1.jpg";
 import sliderImage2 from "./assets/images/slider/slider2.jpg";
+import SideAboutUs from "./components/about/about-components/SideAboutUs";
+import SideOurValues from "./components/about/about-components/SideOurValues";
 
 export const sliderConfig = [
   {
@@ -76,7 +78,7 @@ export const footer = [
   },
   {
     id: 4,
-    title: "Ծառայոիթյուններ",
+    title: "Ծառայություններ",
     route: ROUTER.SERVICES_PAGE_ROUTE,
   },
   {
@@ -96,6 +98,52 @@ export const footer = [
       alt: "logo",
     },
     route: "",
+  },
+];
+
+export const aboutUsSideBar =  [
+  {
+    id: 1,
+    title: "ՄԵՐ ՄԱՍԻՆ",
+    component: <SideAboutUs />,
+  },
+  {
+    id: 2,
+    title: "ՄԵՐ ԱՐԺԵՔՆԵՐԸ",
+    component: <SideOurValues />,
+  },
+];
+
+export const pubicationsSideBar =  [
+  {
+    id: 1,
+    title: "ԱՄՍ",
+    // component: <SideAms />,
+  },
+  {
+    id: 2,
+    title: "ՖՀՄՍ",
+    // component: <SideFhms />,
+  },
+  {
+    id: 3,
+    title: "ՀՀՄՍ",
+    // component: <SideHhms />,
+  },
+  {
+    id: 4,
+    title: "ՕՐԵՆՔՆԵՐ",
+    // component: <SideRules />,
+  },
+  {
+    id: 5,
+    title: "ՏԻՊԱՅԻՆ ՓԱՍՏԱԹՂԹԵՐ",
+    // component: <SideStandardDocuments />,
+  },
+  {
+    id: 6,
+    title: "ՀԱՇՎԵՏՎՈՒԹՅՈՒՆՆԵՐ",
+    // component: <SideReports />,
   },
 ];
 
@@ -121,3 +169,4 @@ export const homeConfig=[
     title:"Կոմպիլիացիա"
   },
 ]
+

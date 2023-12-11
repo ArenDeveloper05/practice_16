@@ -1,32 +1,23 @@
 import { useState } from "react";
+import { aboutUsSideBar } from "../../config";
 import SideList from "../common/side-list/SideList";
+import "./About.scss"
 
 const About = () => {
   const [active, setActive] = useState(1);
-
-  const list = [
-    {
-      id: 1,
-      title: "mer masin",
-      component:
-        "stex lineluya component kanchac arden. orinak porceq <SideAboutUs/>",
-    },
-    {
-      id: 2,
-      title: "mer arjeqnery",
-      component: "some text",
-    },
-  ];
+  
   return (
-    <div>
-      <SideList
-        title={"Ynkerutyun"}
-        list={list}
-        active={active}
-        setActive={setActive}
-      />
-      <div>{list[active - 1].component}</div>
-    </div>
+    <section className="about">
+      <div className="about-container">
+        <SideList
+          title={"ԸՆԿԵՐՈՒԹՅՈՒՆ"}
+          list={aboutUsSideBar}
+          active={active}
+          setActive={setActive}
+        />
+        <div>{aboutUsSideBar[active - 1].component}</div>
+      </div>
+    </section>
   );
 };
 
